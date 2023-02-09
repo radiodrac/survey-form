@@ -1,0 +1,75 @@
+html {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+body {
+    font-family: Calibri, Sans-serif, Arial;
+    padding: 10px 0;
+    background-color: #c9d6dd;
+    color: #333F66;
+}
+
+h1, p[id="description"] {
+  text-align: center;
+}
+
+p {
+  margin: 0 0 0.5em 0;
+}
+
+form {
+  width: 60%;
+  min-width: 380px;
+  margin: 2em auto;
+}
+
+fieldset {
+  padding: 1.5em 0;
+  border: none;
+  border-top: 1px solid;
+}
+
+label {
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin: 0.5em 0;
+  border: 1px solid #9fc0cf;
+  border-radius: 3px;
+}
+
+input, select {
+  height: 2em;
+}
+
+select {
+  color: #333F66;
+}
+
+option {
+  color: #333F66;
+}
+
+option:first-of-type {
+  color: #9e9e9e;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: unset;
+  height: unset;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  font-size: 1.1em;
+  background-color: #333F66;
+  border-color: #333F66;
+}
+
+input#number {
+  max-width: 5em;
+}
