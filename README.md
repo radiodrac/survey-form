@@ -1,2 +1,2 @@
 # survey-form
-Survey Form webpage for freeCodeCamp course
+Survey Form Project for freeCodeCamp course
