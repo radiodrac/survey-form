@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>User Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">User Satisfaction Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve our service!</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Your name" required></label>
+        <label for="email" id="email-label">E-mail: <input id="email" type="email" placeholder="Your e-mail address" required></label>
+        <label for="number" id="number-label">Age (optional): <input id="number" type="number" min=13 max=120 placeholder="00"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"> Your satisfaction rating:
+          <select id="dropdown">
+            <option value="">(select)</option>
+            <option value="1">1 - Not satisfied</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 - Very satisfied</option>
+          </select>
+        </label>
+        <p>Would you recommend our service to a friend?</p>
+        <label for="yes"><input id="yes" type="radio" value="yes" name="recommend"> Yes</label>
+        <label for="no"><input id="no" type="radio" value="no" name="recommend"> No</label>
+        <label for="not-sure"><input id="not-sure" type="radio" value="not-sure" name="recommend"> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <p>Have you encountered any of the problems below? (check all that apply)</p>
+        <label for="log-in"><input id="log-in" value="log-in" type="checkbox"> Trouble logging in</label>
+        <label for="interface"><input id="interface" value="interface" type="checkbox"> Unintuitive interface</label>
+        <label for="unresponsive"><input id="unresponsive" value="unresponsive" type="checkbox"> Unresponsiveness or long response time</label>
+        <label for="instructions"><input id="instructions" value="instuctions" type="checkbox"> Unclear instructions/tutorial</label>
+        <label for="other"><input id="other" value="other" type="checkbox"> Other (please specify in the comment box below)</label>
+        <label for="none"><input id="none" value="none" type="checkbox"> Not encountered any issues</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments"><p>Please share any additional comments or suggestions on how we can improve our service:</p>
+          <textarea rows=3 cols=40 placeholder="(optional)"></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+          <input id="submit" type="submit" value="Submit Survey">
+        </fieldset>
+    </form>
+  </body>
+</html>
